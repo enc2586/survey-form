@@ -1,0 +1,9 @@
+export { default as Dashboard } from "./Dashboard";
+export { default as NotFound } from "./NotFound";
+export { default as BS } from "./bs";
+export { default as Q1 } from "./q1";
+export { default as Q2 } from "./q2";
+export { default as Q3 } from "./q3";
+export { default as Q4 } from "./q4";
+export { default as Q5 } from "./q5";
+export { default as AF } from "./af";
