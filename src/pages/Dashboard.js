@@ -15,13 +15,11 @@ const Dashboard = () => {
     onSnapshot(Q1, (doc) => {
       setConsents(doc.data().consents);
       setDissents(doc.data().dissents);
-      setDisabled(false);
     });
   }, []);
 
   const [consents, setConsents] = React.useState("불러오는 중");
   const [dissents, setDissents] = React.useState("불러오는 중");
-  const [disabled, setDisabled] = React.useState(true);
 
   const initializeValues = () => {
     // 초기화 버튼용 함수. 이거 안 써도 무방.
@@ -48,7 +46,6 @@ const Dashboard = () => {
           disableElevation
           sx={{ mr: 1 }}
           onClick={() => consent()}
-          disabled={disabled}
         >
           찬성
         </Button>
@@ -57,7 +54,6 @@ const Dashboard = () => {
           size="large"
           disableElevation
           sx={{ mr: 1 }}
-          disabled={disabled}
         >
           반대
         </Button>
